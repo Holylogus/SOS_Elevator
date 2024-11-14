@@ -1,0 +1,35 @@
+#Header {
+  background-color: #67809f;
+  color: white;
+  padding: 1rem;
+  max-height: 10vh;
+
+a{
+    text-decoration: none;
+    color: white;
+    
+  }
+
+.navigation{
+  display: flex;
+  flex-direction: row;
+}
+
+  .brand{
+    padding-left: 1rem;
+    display: flex;
+    flex-direction: row;
+    
+
+    img {
+      height: 6vh;
+      width: auto;
+    }
+    strong{
+      
+      padding-left: 2rem;
+      font-size: x-large;
+      
+    }
+  }
+}

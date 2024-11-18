@@ -20,7 +20,7 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Lágy árnyék */
   opacity: 0; /* Kezdetben láthatatlan */
   transform: translateY(20px); /* Kezdetben lent */
-  transition: transform 0.5s ease, opacity 0.5s ease; /* Simább animáció */
+  transition: transform 0.3s ease, opacity 0.3s ease; /* Simább animáció */
 
   img {
     width: 3.5rem;
@@ -45,14 +45,14 @@
   animation-delay: 0s;
 }
 .customCard:nth-child(2) {
-  animation-delay: 0.4s;
+  animation-delay: 0.3s;
 }
 .customCard:nth-child(3) {
-  animation-delay: 0.8s;
+  animation-delay: 0.6s;
 }
 .customCard:nth-child(4) {
-  animation-delay: 1.2s;
+  animation-delay: 0.9s;
 }
 .customCard:nth-child(5) {
-  animation-delay: 1.6s;
+  animation-delay: 1.2s;
 }

@@ -1,0 +1,63 @@
+@keyframes fadeInDown {
+    0% {
+      transform: translateY(-20px); /* Kezdés fentről */
+      opacity: 0; /* Kezdetben láthatatlan */
+    }
+    100% {
+      transform: translateY(0); /* Eredeti helyére kerül */
+      opacity: 1; /* Teljesen látható */
+    }
+  }
+
+#Partners{
+    height: 45vh;
+    display: flex;
+    flex-direction: column;
+    padding-top: 5vh;
+    
+    .partnerTitle{
+        text-align: center;
+        padding-bottom: 5vh;
+    }
+
+    .partners{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    img{
+        width: 10rem;
+        height: auto;
+    }
+    .schindlerImg{
+        height: 5rem;
+        width: 5rem;
+    }
+    .pataki{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .comLift{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .schindler{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .partners > div {
+        opacity: 0; /* Kezdetben láthatatlan */
+        transform: translateY(-20px); /* Kezdés fentről */
+        transition: transform 0.5s ease-out, opacity 0.5s ease-out; /* Smooth animáció */
+      }
+      .partners > div.animate {
+        animation: fadeInDown 0.8s ease-out forwards; /* Az animáció bekapcsolása */
+      }
+}

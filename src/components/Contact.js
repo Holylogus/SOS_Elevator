@@ -1,6 +1,7 @@
 
 import "../styles/Contact.css";
 import { GoogleMap, LoadScript, Marker } from "@react-google-maps/api";
+import logo from "../images/logo.PNG"
 
 
 export default function Contact() {
@@ -17,7 +18,7 @@ export default function Contact() {
   return (
     <div id="Contact">
       <div className="brand">
-        <h1>SOS Elevator</h1>
+        <img src={logo} alt="logo"/>
         <button>Ajánlatkérés</button>
       </div>
       <div className="contact">

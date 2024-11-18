@@ -1,6 +1,14 @@
+@font-face {
+  font-family: 'Bebas Neue';
+  src: url('../fonts/BebasNeue-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 #Header {
   background-color: #67809f;
   color: white;
+  text-shadow: 4px 4px 10px rgba(0, 0, 0, 1);
   height: 10vh;
 
 a{
@@ -19,11 +27,13 @@ a{
   height: 10vh;
 }
 .pageroutes{
-
+  font-weight: bold;
+  
   button{
     
     background-color: #FF9900;
     color: #0066FF;
+    text-shadow: 2px 2px 6px rgba(100, 149, 237, 0.5);
     font-weight: bold;
     margin-top: 1vh;
     margin-bottom: 1vh;
@@ -34,6 +44,8 @@ a{
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+  font-family: 'Bebas Neue';
+  font-size: 24pt;
   
 
   img {

@@ -1,15 +1,22 @@
 
 
 #ServicesCardContainer {
-  height: 40vh;
+  height: 45vh;
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
+  flex-direction: column;
+  justify-content: center;
   padding-top: 4vh;
   padding-bottom: 3vh;
   background-color: whitesmoke;
   border: 1px solid black;
+  text-align: center;
+
+  .cardContainer{
+    padding-top: 3vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
 }
 
 

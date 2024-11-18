@@ -1,6 +1,6 @@
 import React from "react";
 import { Image, Button } from "react-bootstrap";
-import logo from "../images/IMG_0730.PNG";
+import logo from "../images/logo.PNG";
 
 import "../styles/Header.css";
 import { Link } from "react-router-dom";

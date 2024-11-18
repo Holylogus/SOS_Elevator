@@ -12,6 +12,8 @@ export default function ServicesCardContainer() {
 
   return (
     <div id="ServicesCardContainer">
+      <h2>Szolgáltatásaink</h2>
+      <div className="cardContainer">
       <ServiceCard
         src={elevator}
         title="Liftek szervizelése és karbantartása"
@@ -43,6 +45,7 @@ export default function ServicesCardContainer() {
         text="Személyre szabott szaktanácsadás és rendszerfelügyelet a hatékony működésért."
         alt="support"
       />
+      </div>
     </div>
   );
 }

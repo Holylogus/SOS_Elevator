@@ -9,6 +9,13 @@
     }
   }
 
+  @font-face {
+    font-family: 'Bebas Neue';
+    src: url('../fonts/BebasNeue-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
 #Partners{
     height: 45vh;
     display: flex;
@@ -26,6 +33,7 @@
         flex-direction: row;
         align-items: center;
         justify-content: space-evenly;
+        font-family: 'Bebas Neue';
     }
     img{
         width: 10rem;

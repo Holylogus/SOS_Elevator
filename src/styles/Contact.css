@@ -21,6 +21,7 @@
       .googleMap{
         width: 35rem;
         height: 100%;
+        border-left: 1px solid black;
       }
       .brand{
         padding-left: 5vw;

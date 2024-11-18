@@ -4,6 +4,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    border: 1px solid #0066FF;
 
     img{
         max-height: 4vh;

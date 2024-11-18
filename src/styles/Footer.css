@@ -1,0 +1,26 @@
+#Footer{
+    display: flex;
+    height: 8vh;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 5vw;
+    align-items: center;
+    background-color: #FF9900;
+    color: #0066FF;
+    font-weight: bold;
+    border: 1px solid #0066FF;
+
+    .legacy{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .author{
+        width: 50vw;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+}

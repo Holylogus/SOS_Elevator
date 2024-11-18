@@ -1,0 +1,28 @@
+#Contact{
+    height: 45vh;
+    background-color: #67809f;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+
+    button{
+        background-color: #FF9900;
+        color: #0066FF;
+        font-weight: bold;
+        margin-top: 1vh;
+        margin-bottom: 1vh;
+      }
+      strong{
+        color: #FF9900;
+        font-weight: bold;
+      }
+      .googleMap{
+        width: 35rem;
+        height: 100%;
+      }
+      .brand{
+        padding-left: 5vw;
+      }
+}

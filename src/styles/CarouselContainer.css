@@ -1,0 +1,16 @@
+#CarouselContainer{
+    height: 83vh;
+
+    h3{
+        color: #FFD700;
+        text-shadow: 4px 4px 10px rgba(0, 0, 0, 1);
+        -webkit-text-stroke: 1px rgba(0, 0, 0, 0.4);
+        font-size: xx-large;
+    }
+    p{
+        color: #FFD700;
+        text-shadow: 4px 4px 10px rgba(0, 0, 0, 1);
+        -webkit-text-stroke: 1px rgba(0, 0, 0, 0.4);
+        font-size: large;
+    }
+}

@@ -1,0 +1,58 @@
+@keyframes floatUp {
+  0% {
+    transform: translateY(120px); /* Indulás alulról */
+    opacity: 0; /* Kezdeti áttetszőség */
+  }
+  100% {
+    transform: translateY(0); /* Végpozíció */
+    opacity: 1; /* Teljesen látható */
+  }
+}
+
+.customCard {
+  width: 13rem;
+  height: 30vh;
+  background-color: #67809f;
+  color: white;
+  text-align: center;
+  border: 1px solid black;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Lágy árnyék */
+  opacity: 0; /* Kezdetben láthatatlan */
+  transform: translateY(20px); /* Kezdetben lent */
+  transition: transform 0.5s ease, opacity 0.5s ease; /* Simább animáció */
+
+  img {
+    width: 3.5rem;
+  }
+  h2 {
+    font-size: medium;
+  }
+  p {
+    font-size: smaller;
+  }
+}
+
+.customCard:hover {
+  transform: scale(1.05); /* Enyhén kiemelkedik hoverkor */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); /* Erősebb árnyék hoverkor */
+}
+.customCard.animate {
+  animation: floatUp 1s ease-out forwards; /* Animáció indítása */
+}
+
+.customCard:nth-child(1) {
+  animation-delay: 0s;
+}
+.customCard:nth-child(2) {
+  animation-delay: 0.4s;
+}
+.customCard:nth-child(3) {
+  animation-delay: 0.8s;
+}
+.customCard:nth-child(4) {
+  animation-delay: 1.2s;
+}
+.customCard:nth-child(5) {
+  animation-delay: 1.6s;
+}

@@ -1,0 +1,14 @@
+
+
+#ServicesCardContainer {
+  height: 40vh;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding-top: 4vh;
+  padding-bottom: 3vh;
+  background-color: whitesmoke;
+}
+
+

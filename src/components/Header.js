@@ -1,5 +1,5 @@
 import React from "react";
-import { Image } from "react-bootstrap";
+import { Image, Button } from "react-bootstrap";
 import logo from "../images/IMG_0730.PNG";
 
 import "../styles/Header.css";
@@ -16,7 +16,12 @@ function Header() {
           </Link>
         </div>
         <div className="pageroutes">
-          <Link>Rólunk</Link>
+          <Link to="/About">Rólunk</Link>
+          <Link to="Services">Szolgáltatások</Link>
+          <Link to="Contact">Kapcsolat</Link>
+          <Button variant="primary" onClick={() => console.log("Primary")}>
+            Ajánlatkérés
+          </Button>
         </div>
       </nav>
     </header>

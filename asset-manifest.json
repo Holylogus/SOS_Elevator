@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/SOS_Elevator/static/css/main.5df6ed5a.css",
+    "main.js": "/SOS_Elevator/static/js/main.475b5f82.js",
+    "static/js/453.9343f8f1.chunk.js": "/SOS_Elevator/static/js/453.9343f8f1.chunk.js",
+    "static/media/escalatorService.png": "/SOS_Elevator/static/media/escalatorService.9e05b63d95de04caf24c.png",
+    "static/media/modernization.png": "/SOS_Elevator/static/media/modernization.53e36d423daef934a198.png",
+    "static/media/ServicesKarbantartas.png": "/SOS_Elevator/static/media/ServicesKarbantartas.62e4d31284552eee8675.png",
+    "static/media/liftService.png": "/SOS_Elevator/static/media/liftService.e85aa65c2b917a57b14f.png",
+    "static/media/ServicesModernization.png": "/SOS_Elevator/static/media/ServicesModernization.5a5d2eea8c92c5966e5f.png",
+    "static/media/ServicesSzervizeles.png": "/SOS_Elevator/static/media/ServicesSzervizeles.e57e6f40b5efdf58941e.png",
+    "static/media/ServicesTanacsadas.png": "/SOS_Elevator/static/media/ServicesTanacsadas.0600161653e3a078a842.png",
+    "static/media/logo.PNG": "/SOS_Elevator/static/media/logo.61572196fc888eef6ba6.PNG",
+    "static/media/BebasNeue-Regular.ttf": "/SOS_Elevator/static/media/BebasNeue-Regular.12e3683f9192436a7be8.ttf",
+    "static/media/PatakiLift.PNG": "/SOS_Elevator/static/media/PatakiLift.50f98bb0ef8c3c0c2cfb.PNG",
+    "static/media/Com-Lift.PNG": "/SOS_Elevator/static/media/Com-Lift.acb781adac367b38ce54.PNG",
+    "static/media/Schindler.PNG": "/SOS_Elevator/static/media/Schindler.33b0aa0b1fa48a199545.PNG",
+    "index.html": "/SOS_Elevator/index.html",
+    "main.5df6ed5a.css.map": "/SOS_Elevator/static/css/main.5df6ed5a.css.map",
+    "main.475b5f82.js.map": "/SOS_Elevator/static/js/main.475b5f82.js.map",
+    "453.9343f8f1.chunk.js.map": "/SOS_Elevator/static/js/453.9343f8f1.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5df6ed5a.css",
+    "static/js/main.475b5f82.js"
+  ]
+}

@@ -1,6 +1,8 @@
 #ContactPage {
   display: grid;
   grid-template-columns: 2;
+  padding-bottom: 4vh;
+  border-bottom: 1px solid black;
 
   .kapcsolat {
     grid-column-start: 1;
@@ -13,6 +15,7 @@
 
     h3{
         text-decoration: underline;
+        padding-bottom: 1vh;
     }
   }
 

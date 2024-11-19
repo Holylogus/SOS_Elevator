@@ -1,7 +1,7 @@
 {
   "name": "soselevator",
   "version": "0.1.0",
-  "homepage": "https://Holylogus.github.io/SOS_Elevator/",
+  "homepage": "https://holylogus.github.io/SOS_Elevator/",
   "private": true,
   "dependencies": {
     "@react-google-maps/api": "^2.20.3",

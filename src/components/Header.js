@@ -1,5 +1,5 @@
 import React from "react";
-import { Image, Button, DropdownButton, Dropdown, DropdownToggle } from "react-bootstrap";
+import { Image, Button, Dropdown, DropdownToggle } from "react-bootstrap";
 import logo from "../images/logo.PNG";
 
 import "../styles/Header.css";

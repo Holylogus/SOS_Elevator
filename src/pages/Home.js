@@ -8,14 +8,14 @@ import Footer from "../components/Footer"
 
 export default function Home(){
 
+    
+
     return(
         <>
         <CarouselContainer/>
         <ServicesCardContainer/>
         <WhyUsSection/>
         <Partners/>
-        <Contact/>
-        <Footer/>
         </>
     )
 }

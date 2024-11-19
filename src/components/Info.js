@@ -3,9 +3,9 @@ import { Image } from 'react-bootstrap';
 import mailIcon from "../icons/mail.png"
 import "../styles/Info.css"
 
-export default function Info() {
+export default function Info({className}) {
     return(
-        <div id="Info" >
+        <div id="Info" className={className}>
             <div className="phone">
                 <img src={phoneIcon} alt="phoneIcon"/>
                 <p>+36 30 502 18 35</p>

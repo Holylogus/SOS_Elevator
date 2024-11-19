@@ -6,7 +6,12 @@
 }
 
 #Header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
   background-color: #67809f;
+  border-bottom: 0.5px solid black;
   color: white;
   text-shadow: 4px 4px 10px rgba(0, 0, 0, 1);
   height: 10vh;

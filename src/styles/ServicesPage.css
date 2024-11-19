@@ -1,34 +1,143 @@
 #ServicePage{
     color: #67809f;
+    text-shadow: 2px 2px 5px rgba(103, 128, 159, 0.3);
 
     .services{
         display: flex;
         flex-direction: column;
-        padding-left: 5vw;
-        padding-right: 5vw;
+       
 
-        section{
+        #karbantartas{
             display: flex;
             flex-direction: row;
-            align-items: center;
-            width: 100%;
             padding-top: 5vh;
-            padding-right: 5vw;
-            
-        }
-        h3{
-            text-decoration: underline;
-            padding-bottom: 3vh;
-        }
-        img{
-            height: 28vh;
-            margin-left: 5vw;
-            ;
+            padding-bottom: 2vh;
+            padding-left: 3vw;
+            padding-right: 3vw;
 
-        }
-        p{
-            padding-left: 2vw;
+            img{
+                height: 75vh;
+                border: 1px solid black;
+                border-radius: 5px;
+                margin-left: 2vw;
+            }
+            h4{
+                padding-bottom: 2vh;
+                text-decoration: underline;
+            }
+            p{
+                text-align: justify;
+                padding-left: 1vw;
+                padding-right: 1vw;
+            }
         }
         
+        #szerviz{
+            display: flex;
+            flex-direction: row;
+            display: flex;
+            flex-direction: row;
+            padding-top: 5vh;
+            padding-bottom: 2vh;
+            padding-left: 3vw;
+            padding-right: 3vw;
+            background-color: #67809f;
+            color: white;
+            text-shadow: 4px 4px 10px rgba(0, 0, 0, 1);
+            border: 1px solid black;
+
+            .szerviz{
+                padding-left: 2vw;
+            }
+            img{
+                height: 55vh;
+                border: 1px solid black;
+                border-radius: 5px;
+            }
+            h4{
+                padding-bottom: 2vh;
+                padding-left: 1.5vw;
+                text-decoration: underline;
+            }
+            p{
+                text-align: justify;
+                padding-left: 1vw;
+                padding-right: 1vw;
+            }
+            h5{
+                padding-left: 1.5vw;
+            }
+            ul{
+                padding-left: 4vw;
+            }
+            
+        }
+
+        #modernizacio{
+            display: flex;
+            flex-direction: row;
+            padding-top: 5vh;
+            padding-bottom: 2vh;
+            padding-left: 3vw;
+            padding-right: 3vw;
+
+            img{
+                height: 75vh;
+                border: 1px solid black;
+                border-radius: 5px;
+                margin-top: 10vh;
+                margin-left: 2vw;
+            }
+            h4{
+                padding-bottom: 2vh;
+                text-decoration: underline;
+            }
+            p{
+                text-align: justify;
+                padding-left: 1vw;
+                padding-right: 1vw;
+            }
+        }
+        #tanacsadas{
+            display: flex;
+            flex-direction: row;
+            display: flex;
+            flex-direction: row;
+            padding-top: 5vh;
+            padding-bottom: 2vh;
+            padding-left: 3vw;
+            padding-right: 3vw;
+            background-color: #67809f;
+            color: white;
+            text-shadow: 4px 4px 10px rgba(0, 0, 0, 1);
+            border: 1px solid black;
+
+            .tanacsadas{
+                padding-left: 2vw;
+            }
+            img{
+                height: 55vh;
+                border: 1px solid black;
+                border-radius: 5px;
+                margin-top: 7vh;
+                
+            }
+            h4{
+                padding-bottom: 2vh;
+                padding-left: 1.5vw;
+                text-decoration: underline;
+            }
+            p{
+                text-align: justify;
+                padding-left: 1vw;
+                padding-right: 1vw;
+            }
+            h5{
+                padding-left: 1.5vw;
+            }
+            ul{
+                padding-left: 4vw;
+            }
+        }
     }
 }

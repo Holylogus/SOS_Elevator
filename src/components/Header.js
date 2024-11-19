@@ -1,13 +1,16 @@
 import React from "react";
 import { Image, Button, Dropdown, DropdownToggle } from "react-bootstrap";
 import logo from "../images/logo.PNG";
+import {HashLink} from "react-router-hash-link";
 
 import "../styles/Header.css";
 import { Link } from "react-router-dom";
+import Info from "./Info";
 
-function Header() {
+
+function Header({className}) {
   return (
-    <header id="Header">
+    <header id="Header" className={className}>
       <nav className="navigation">
         <div className="brand">
           <Image src={logo} rounded />
@@ -22,11 +25,10 @@ function Header() {
               Szolgáltatások
             </DropdownToggle>
             <Dropdown.Menu>
-              <Dropdown.Item as={Link} to="/Services#karbantartas">Karbantartás</Dropdown.Item>
-              <Dropdown.Item as={Link} to="/Services#serviz">Szervíz</Dropdown.Item>
-              <Dropdown.Item as={Link} to="/Services#modernizacio">Modernizáció</Dropdown.Item>
-              <Dropdown.Item as={Link} to="/Services#hibaelharitas">Hibaelhárítás</Dropdown.Item>
-              <Dropdown.Item as={Link} to="/Services#tanacsadas">Tanácsadás</Dropdown.Item>
+              <Dropdown.Item as={HashLink} to="/Services#karbantartas">Karbantartás</Dropdown.Item>
+              <Dropdown.Item as={HashLink} to="/Services#szerviz">Szervíz</Dropdown.Item>
+              <Dropdown.Item as={HashLink} to="/Services#modernizacio">Modernizáció</Dropdown.Item>
+              <Dropdown.Item as={HashLink} to="/Services#tanacsadas">Tanácsadás</Dropdown.Item>
             </Dropdown.Menu>
           </Dropdown>
           <Link to="Contact">Kapcsolat</Link>

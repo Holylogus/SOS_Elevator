@@ -3,8 +3,8 @@ import { Route, Routes } from "react-router-dom";
 import Home from "./pages/Home";
 import Service from "./pages/Service";
 import About from "./pages/About";
-import Contact from "./pages/Contact";
 import GuestLayout from "./layout/GuestLayout";
+import ContactPage from "./pages/ContactPage";
 
 function App() {
   return (
@@ -13,7 +13,7 @@ function App() {
         <Route index element={<Home />} />
         <Route path="/Services" element={<Service />} />
         <Route path="/About" element={<About />} />
-        <Route path="/Contact" element={<Contact />} />
+        <Route path="/Contact" element={<ContactPage />} />
       </Route>
     </Routes>
   );

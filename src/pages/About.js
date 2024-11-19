@@ -93,8 +93,6 @@ export default function About() {
           <h3>Ügyfélközpontúság</h3>
         </div>
       </div>
-      <Contact/>
-      <Footer/>
     </div>
     
   );

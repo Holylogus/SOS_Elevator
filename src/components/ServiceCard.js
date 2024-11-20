@@ -1,8 +1,11 @@
 import { useEffect, useRef } from "react";
 import "../styles/ServiceCard.css"
+import { useNavigate } from "react-router-dom";
 
-export default function ServiceCard({ src, title, text, alt }) {
+export default function ServiceCard({ src, title, text, alt, route }) {
     const CardRef = useRef(null);
+
+    const navigate = useNavigate();  
 
     useEffect(()=>{
         const observer = new IntersectionObserver(
@@ -27,7 +30,9 @@ export default function ServiceCard({ src, title, text, alt }) {
         }
     },[])
     return (
-    <div className="customCard" ref={CardRef}>
+    <div className="customCard" ref={CardRef} onClick={()=>{
+      navigate(route)
+    }}>
       <div className="cardHeader">
         <img src={src} alt={alt} />
         <h2>{title}</h2>

@@ -4,8 +4,6 @@ import clock from "../icons/clock.png";
 import heart from "../icons/heart.png";
 import glasses from "../icons/glasses.png";
 import customer from "../icons/customer.png";
-import Contact from "../components/Contact";
-import Footer from "../components/Footer";
 import { useEffect, useRef } from "react";
 
 export default function About() {

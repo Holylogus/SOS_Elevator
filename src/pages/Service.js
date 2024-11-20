@@ -1,5 +1,3 @@
-import Contact from "../components/Contact";
-import Footer from "../components/Footer";
 import "../styles/ServicesPage.css";
 import karbantartas from "../images/ServicesKarbantartas.png";
 import szervizeles from "../images/ServicesSzervizeles.png";

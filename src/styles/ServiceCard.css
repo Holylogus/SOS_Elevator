@@ -37,6 +37,7 @@
 .customCard:hover {
   transform: scale(1.05); /* Enyhén kiemelkedik hoverkor */
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); /* Erősebb árnyék hoverkor */
+  cursor: pointer;
 }
 .customCard.animate {
   animation: floatUp 1s ease-out forwards; /* Animáció indítása */

@@ -1,4 +1,3 @@
-import Contact from "../components/Contact";
 import "../styles/ContactPage.css"
 import { Form, Button, Row, Col } from 'react-bootstrap';
 

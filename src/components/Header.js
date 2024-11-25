@@ -2,10 +2,9 @@ import React from "react";
 import { Image, Button, Dropdown, DropdownToggle } from "react-bootstrap";
 import logo from "../images/logo.PNG";
 import {HashLink} from "react-router-hash-link";
-
 import "../styles/Header.css";
 import { Link } from "react-router-dom";
-import Info from "./Info";
+
 
 
 function Header({className}) {

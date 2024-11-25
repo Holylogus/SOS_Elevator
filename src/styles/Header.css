@@ -1,14 +1,39 @@
 @font-face {
-  font-family: 'Bebas Neue';
-  src: url('../fonts/BebasNeue-Regular.ttf') format('truetype');
+  font-family: "BlackOps";
+  src: url("../fonts/BlackOpsOne-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 
+@media (max-width: 768px) {
+  #Header .navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    /* width: 100%; */
+    font-size: smaller;
+  }
+
+  #Header .pageroutes {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+    gap: 1rem;
+    font-weight: bold;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  /* Tablet eszközökre vonatkozó szabályok */
+}
+
+
 #Header {
   position: fixed;
   top: 0;
-  width: 100%;
+  width: 100vw;
   z-index: 1000;
   background-color: #67809f;
   border-bottom: 0.5px solid black;
@@ -19,80 +44,67 @@
   align-items: center;
   justify-content: space-between;
   padding: 0 2vw;
-
-a{
-    text-decoration: none;
-    color: white;
-    padding: 0 1vw;
-  }
-
-.navigation{
+}
+#Header a {
+  text-decoration: none;
+  color: white;
+  padding: 0 1vw;
+}
+#Header .navigation {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
+  /* width: 100%; */
 }
-.pageroutes{
+#Header .pageroutes {
   display: flex;
   flex-direction: row;
   align-items: center;
   gap: 1rem;
   font-weight: bold;
-  
-  button{
-    
-    background-color: #FF9900;
-    color: #0066FF;
-    text-shadow: 2px 2px 6px rgba(100, 149, 237, 0.5);
-    font-weight: bold;
-    margin-top: 1vh;
-    margin-bottom: 1vh;
-  }
 }
-.brand{
+#Header .pageroutes button {
+  background-color: #ff9900;
+  color: #0066ff;
+  text-shadow: 2px 2px 6px rgba(100, 149, 237, 0.5);
+  font-weight: bold;
+  margin-top: 1vh;
+  margin-bottom: 1vh;
+}
+#Header .brand {
   padding-left: 1rem;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  font-family: 'Bebas Neue';
-  font-size: 24pt;
-  
-
-  img {
-    height: 6vh;
-    width: auto;
-  }
-  strong{
-    
-    padding-left: 2rem;
-    font-size: x-large;
-    
-  }
+  font-family: "BlackOps";
 }
-.dropdownToggle {
+#Header .brand img {
+  height: 6vh;
+  width: auto;
+}
+#Header .brand strong {
+  padding-left: 2rem;
+}
+#Header .dropdownToggle {
   text-decoration: none;
   color: white;
   font-weight: bold;
   margin-left: 1vw;
   margin-right: 1vw;
 }
-.dropdown-menu {
+#Header .dropdown-menu {
   background-color: #67809f;
   padding: 0;
   width: 100%;
 }
-.dropdown-menu a {
+#Header .dropdown-menu a {
   color: white;
   text-decoration: none;
   padding: 0.5rem 1rem;
   display: block;
 }
-.dropdown-menu a:hover {
-  background-color: #FF9900;
-  color: #0066FF;
+#Header .dropdown-menu a:hover {
+  background-color: #ff9900;
+  color: #0066ff;
 }
-}
-
-
-

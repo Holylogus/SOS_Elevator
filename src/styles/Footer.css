@@ -9,19 +9,23 @@
     color: #0066FF;
     text-shadow: 2px 2px 7px rgba(100, 149, 237, 0.6);
     font-weight: bold;
-    border: 1px solid #0066FF;
+    border: 1px solid #0066FF; 
+}
+#Footer .legacy{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+#Footer .author{
+    width: 50vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
 
-    .legacy{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-    }
-
-    .author{
-        width: 50vw;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        align-items: center;
+@media (max-width: 1024px){
+    #Footer{
+        font-size: smaller;
     }
 }

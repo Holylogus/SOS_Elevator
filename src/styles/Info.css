@@ -5,29 +5,36 @@
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    border: 1px solid #0066FF;
+    border: 1px solid #0066FF;    
+}
 
-    img{
-        max-height: 4vh;
-    }
+#Info img{
+    max-height: 4vh;
+}
+#Info .phone{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+#Info .email{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+#Info p{
+    padding-left: 2vw;
+    display: inline-block;
+    margin: 0;
+    color: #0066FF;
+    text-shadow: 2px 2px 6px rgba(100, 149, 237, 0.5);
+    font-weight: bold;
+}
 
-    .phone{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
+@media (max-width: 440px){
+    #Info img{
+        max-height: 2.5vh;
     }
-    .email{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
+    #Info p{
+        font-size: smaller;
     }
-    p{
-        padding-left: 2vw;
-        display: inline-block;
-        margin: 0;
-        color: #0066FF;
-        text-shadow: 2px 2px 6px rgba(100, 149, 237, 0.5);
-        font-weight: bold;
-    }
-    
 }

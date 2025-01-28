@@ -23,15 +23,15 @@
   transform: translateY(20px); /* Kezdetben lent */
   transition: transform 0.3s ease, opacity 0.3s ease; /* Simább animáció */
 
-  img {
-    width: 3.5rem;
-  }
-  h2 {
-    font-size: medium;
-  }
-  p {
-    font-size: smaller;
-  }
+}
+.customCard img {
+  width: 3.5rem;
+}
+.customCard h2 {
+  font-size: medium;
+}
+.customCard p {
+  font-size: smaller;
 }
 
 .customCard:hover {
@@ -57,4 +57,23 @@
 }
 .customCard:nth-child(5) {
   animation-delay: 0.8s;
+}
+
+@media (max-width: 440px){
+  .customCard{
+    margin-bottom: 4vh;
+    width: 10rem;
+    height: 29vh;
+  }
+  .customCard h2 {
+    font-size: smaller;
+  }
+  .customCard p {
+    font-size: small;
+  }
+}
+@media (min-width: 440px) and (max-width: 1024px){
+.customCard{
+  margin-bottom: 4vh;
+}
 }

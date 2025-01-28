@@ -1,41 +1,55 @@
 import React from "react";
-import { Image, Button, Dropdown, DropdownToggle } from "react-bootstrap";
+import { Image, Button, Dropdown, DropdownToggle, Container, Navbar, Offcanvas, Nav, NavDropdown } from "react-bootstrap";
 import logo from "../images/logo.PNG";
-import {HashLink} from "react-router-hash-link";
+import menuIcon from "../icons/menuIcon.png"
+import { HashLink } from "react-router-hash-link";
 import "../styles/Header.css";
 import { Link } from "react-router-dom";
 
-
-
-function Header({className}) {
+function Header({ className }) {
   return (
     <header id="Header" className={className}>
-      <nav className="navigation">
-        <div className="brand">
-          <Image src={logo} rounded />
-          <Link to="/">
-            <strong>SOS Elevator</strong>
-          </Link>
-        </div>
-        <div className="pageroutes">
-          <Link to="/About">Rólunk</Link>
-          <Dropdown>
-            <DropdownToggle as="a" className="dropdownToggle" href="#">
-              Szolgáltatások
-            </DropdownToggle>
-            <Dropdown.Menu>
-              <Dropdown.Item as={HashLink} to="/Services#karbantartas">Karbantartás</Dropdown.Item>
-              <Dropdown.Item as={HashLink} to="/Services#szerviz">Szervíz</Dropdown.Item>
-              <Dropdown.Item as={HashLink} to="/Services#modernizacio">Modernizáció</Dropdown.Item>
-              <Dropdown.Item as={HashLink} to="/Services#tanacsadas">Tanácsadás</Dropdown.Item>
-            </Dropdown.Menu>
-          </Dropdown>
-          <Link to="Contact">Kapcsolat</Link>
-          <Button variant="primary" onClick={() => console.log("Primary")}>
-            Ajánlatkérés
-          </Button>
-        </div>
-      </nav>
+      <Navbar expand="md">
+          <Container fluid>
+            <Navbar.Brand href="/">
+              <Image src={logo} />
+              SOS Elevator
+              </Navbar.Brand>
+            <Navbar.Toggle aria-controls="offcanvasArea" />
+            <Navbar.Offcanvas
+              id="offcanvasArea"
+              aria-labelledby="offcanvasAreaLabel"
+              placement="end"
+            >
+              <Offcanvas.Header closeButton>
+                <Offcanvas.Title id="offcanvasAreaLabel">
+                  Offcanvas
+                </Offcanvas.Title>
+              </Offcanvas.Header>
+              <Offcanvas.Body>
+                <Nav className="justify-content-end flex-grow-1 pe-3">
+                  <Nav.Link><Link to="/About">Rólunk</Link></Nav.Link>
+                  <Nav.Link><Link to="/Contact">Kapcsolat</Link></Nav.Link>
+                  <NavDropdown
+                    title="Szolgáltatások"
+                    id="dropdown"
+                  >
+                    <NavDropdown.Item as={HashLink} to="/Services#karbantartas" >Karbantartás</NavDropdown.Item>
+                    <NavDropdown.Item as={HashLink} to="/Services#szerviz">
+                    Szervíz
+                    </NavDropdown.Item>
+                    <NavDropdown.Item as={HashLink} to="/Services#modernizacio">
+                    Modernizáció
+                    </NavDropdown.Item>
+                    <NavDropdown.Item as={HashLink} to="/Services#tanacsadas">
+                    Tanácsadás
+                    </NavDropdown.Item>
+                  </NavDropdown>
+                </Nav>
+              </Offcanvas.Body>
+            </Navbar.Offcanvas>
+          </Container>
+        </Navbar>
     </header>
   );
 }

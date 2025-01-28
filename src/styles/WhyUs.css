@@ -10,8 +10,13 @@
     padding-right: 5vw;
     padding-top: 5vh;
     justify-content: space-between;
+}
+#WhyUsSection li{
+    padding-top: 2vh;
+}
 
-    li{
-        padding-top: 2vh;
+@media (max-width: 1024px){
+    #WhyUsSection{
+        height: max-content;
     }
 }

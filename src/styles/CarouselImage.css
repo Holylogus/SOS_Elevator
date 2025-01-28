@@ -6,11 +6,34 @@
     position: relative;
 
     
-    h1{
-        text-align: center;
-        padding-top: 40vh;
-        color: #FFD700;
-        text-shadow: 4px 4px 10px rgba(0, 0, 0, 1);
-        -webkit-text-stroke: 1px rgba(0, 0, 0, 0.4);
+    
+}
+.CarouselImage h1{
+    text-align: center;
+    padding-top: 40vh;
+    color: #FFD700;
+    text-shadow: 4px 4px 10px rgba(0, 0, 0, 1);
+    -webkit-text-stroke: 1px rgba(0, 0, 0, 0.4);
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+    
+    .CarouselImage h1{
+        padding-top: 30vh;
+    }
+}
+@media (min-width: 440px) and (max-width: 768px){
+    .CarouselImage{
+        height: 75vh;
+    }
+    .CarouselImage h1{
+        padding-top: 30vh;
+    }
+}
+@media (max-width: 440px){
+    .CarouselImage h1{
+        padding-top: 20vh;
+    }
+    .CarouselImage{
+        height: 75vh;
     }
 }

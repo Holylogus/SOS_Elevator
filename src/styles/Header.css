@@ -5,29 +5,9 @@
   font-style: normal;
 }
 
-@media (max-width: 768px) {
-  #Header .navigation {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    /* width: 100%; */
-    font-size: smaller;
-  }
 
-  #Header .pageroutes {
-    display: flex;
-    flex-direction: row;
-    justify-content: end;
-    align-items: center;
-    gap: 1rem;
-    font-weight: bold;
-  }
-}
 
-@media (min-width: 769px) and (max-width: 1024px) {
-  /* Tablet eszközökre vonatkozó szabályok */
-}
+
 
 
 #Header {
@@ -95,4 +75,28 @@
 #Header .dropdown-menu a:hover {
   background-color: #ff9900;
   color: #0066ff;
+}
+
+@media (max-width: 768px) {
+  #Header .navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    /* width: 100%; */
+    font-size: smaller;
+  }
+
+  #Header .pageroutes {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+    gap: 1rem;
+    font-weight: bold;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  
 }

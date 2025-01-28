@@ -28,19 +28,21 @@ function Header({ className }) {
               </Offcanvas.Header>
               <Offcanvas.Body>
                 <Nav className="justify-content-end flex-grow-1 pe-3">
-                  <Nav.Link to="/About">Rólunk</Nav.Link>
-                  <Nav.Link href="#action2">Link</Nav.Link>
+                  <Nav.Link><Link to="/About">Rólunk</Link></Nav.Link>
+                  <Nav.Link><Link to="/Contact">Kapcsolat</Link></Nav.Link>
                   <NavDropdown
-                    title="Dropdown"
+                    title="Szolgáltatások"
                     id="dropdown"
                   >
-                    <NavDropdown.Item href="#action3">Action</NavDropdown.Item>
-                    <NavDropdown.Item href="#action4">
-                      Another action
+                    <NavDropdown.Item as={HashLink} to="/Services#karbantartas" >Karbantartás</NavDropdown.Item>
+                    <NavDropdown.Item as={HashLink} to="/Services#szerviz">
+                    Szervíz
                     </NavDropdown.Item>
-                    <NavDropdown.Divider />
-                    <NavDropdown.Item href="#action5">
-                      Something else here
+                    <NavDropdown.Item as={HashLink} to="/Services#modernizacio">
+                    Modernizáció
+                    </NavDropdown.Item>
+                    <NavDropdown.Item as={HashLink} to="/Services#tanacsadas">
+                    Tanácsadás
                     </NavDropdown.Item>
                   </NavDropdown>
                 </Nav>

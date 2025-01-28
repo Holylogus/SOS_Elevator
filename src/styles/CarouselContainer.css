@@ -1,16 +1,27 @@
 #CarouselContainer{
-    height: 83vh;
+    height: 83vh;   
+}
+#CarouselContainer h3{
+    color: #FFD700;
+    text-shadow: 4px 4px 10px rgba(0, 0, 0, 1);
+    -webkit-text-stroke: 1px rgba(0, 0, 0, 0.4);
+    font-size: xx-large;
+}
+#CarouselContainer p{
+    color: #FFD700;
+    text-shadow: 4px 4px 10px rgba(0, 0, 0, 1);
+    -webkit-text-stroke: 1px rgba(0, 0, 0, 0.4);
+    font-size: large;
+}
 
-    h3{
-        color: #FFD700;
-        text-shadow: 4px 4px 10px rgba(0, 0, 0, 1);
-        -webkit-text-stroke: 1px rgba(0, 0, 0, 0.4);
-        font-size: xx-large;
+@media (max-width: 768px){
+    #CarouselContainer{
+        height: 75vh;   
     }
-    p{
-        color: #FFD700;
-        text-shadow: 4px 4px 10px rgba(0, 0, 0, 1);
-        -webkit-text-stroke: 1px rgba(0, 0, 0, 0.4);
-        font-size: large;
+    #CarouselContainer h3{
+        font-size: x-large;
+    }
+    #CarouselContainer p{
+        font-size: medium;
     }
 }

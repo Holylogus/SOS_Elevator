@@ -63,7 +63,7 @@
   .customCard{
     margin-bottom: 4vh;
     width: 10rem;
-    height: 29vh;
+    height: 13rem;
   }
   .customCard h2 {
     font-size: smaller;
@@ -75,5 +75,7 @@
 @media (min-width: 440px) and (max-width: 1024px){
 .customCard{
   margin-bottom: 4vh;
+  width: 10rem;
+  height: 13rem;
 }
 }

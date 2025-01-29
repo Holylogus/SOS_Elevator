@@ -23,11 +23,11 @@ function Header({ className }) {
             >
               <Offcanvas.Header closeButton>
                 <Offcanvas.Title id="offcanvasAreaLabel">
-                  Offcanvas
+                  SOS Elevator
                 </Offcanvas.Title>
               </Offcanvas.Header>
               <Offcanvas.Body>
-                <Nav className="justify-content-end flex-grow-1 pe-3">
+                <Nav >
                   <Nav.Link><Link to="/About">Rólunk</Link></Nav.Link>
                   <Nav.Link><Link to="/Contact">Kapcsolat</Link></Nav.Link>
                   <NavDropdown
@@ -45,6 +45,7 @@ function Header({ className }) {
                     Tanácsadás
                     </NavDropdown.Item>
                   </NavDropdown>
+                  <button>Ajánlatkérés</button>
                 </Nav>
               </Offcanvas.Body>
             </Navbar.Offcanvas>

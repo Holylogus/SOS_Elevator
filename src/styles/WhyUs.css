@@ -1,5 +1,5 @@
 #WhyUsSection{
-    height: 60vh;
+    height: max-content;
     background-color: #67809f;
     color: whitesmoke;
     text-shadow: 4px 4px 10px rgba(0, 0, 0, 1);
@@ -10,9 +10,14 @@
     padding-right: 5vw;
     padding-top: 5vh;
     justify-content: space-between;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
 }
 #WhyUsSection li{
     padding-top: 2vh;
+}
+#WhyUsSection h2{
+    padding-bottom: 2vh;
 }
 
 @media (max-width: 1024px){

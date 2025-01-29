@@ -17,56 +17,68 @@
   }
 
 #Partners{
-    height: 45vh;
+    height: 20rem;
     display: flex;
     flex-direction: column;
     padding-top: 5vh;
-    border: 1px solid black;
-    
-    .partnerTitle{
-        text-align: center;
-        padding-bottom: 5vh;
-    }
+    border: 1px solid black;     
+}
+#Partners .partnerTitle{
+  text-align: center;
+  padding-bottom: 5vh;
+}
+#Partners .partners{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  font-family: 'Bebas Neue';
+}
+#Partners img{
+  width: 10rem;
+  height: auto;
+}
+#Partners .schindlerImg{
+  height: 5rem;
+  width: 5rem;
+}
+#Partners .pataki{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#Partners .comLift{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#Partners .schindler{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#Partners .partners > div {
+  opacity: 0; /* Kezdetben láthatatlan */
+  transform: translateY(-20px); /* Kezdés fentről */
+  transition: transform 0.5s ease-out, opacity 0.5s ease-out; /* Smooth animáció */
+}
+#Partners .partners > div.animate {
+  animation: fadeInDown 0.8s ease-out forwards; /* Az animáció bekapcsolása */
+}
 
-    .partners{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-evenly;
-        font-family: 'Bebas Neue';
-    }
-    img{
-        width: 10rem;
-        height: auto;
-    }
-    .schindlerImg{
-        height: 5rem;
-        width: 5rem;
-    }
-    .pataki{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    .comLift{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    .schindler{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    .partners > div {
-        opacity: 0; /* Kezdetben láthatatlan */
-        transform: translateY(-20px); /* Kezdés fentről */
-        transition: transform 0.5s ease-out, opacity 0.5s ease-out; /* Smooth animáció */
-      }
-      .partners > div.animate {
-        animation: fadeInDown 0.8s ease-out forwards; /* Az animáció bekapcsolása */
-      }
+@media (max-width: 440px){
+  #Partners .partners{
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  #Partners .pataki{
+    padding-bottom: 2vh;
+  }
+  #Partners .elevatorFriends{
+    padding-bottom: 2vh;
+  }
 }

@@ -48,7 +48,7 @@ export default function ServicesCardContainer() {
         title="Szaktanácsadás és rendszerfelügyelet"
         text="Személyre szabott szaktanácsadás és rendszerfelügyelet a hatékony működésért."
         alt="support"
-        route = "/Services#tanacsadas"
+        route =  "/Services#tanacsadas"
       />
       </div>
     </div>

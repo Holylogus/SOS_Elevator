@@ -6,7 +6,9 @@
     justify-content: space-between;
     align-items: center;
     color: white;
-    text-shadow: 4px 4px 10px rgba(0, 0, 0, 1);    
+    text-shadow: 4px 4px 10px rgba(0, 0, 0, 1);
+    border-left: 1px solid black;    
+    border-right: 1px solid black;
 }
 #Contact button{
   background-color: #FF9900;
@@ -26,6 +28,7 @@
   width: 35rem;
   height: 100%;
   border-left: 1px solid black;
+  
 }
 #Contact .brand{
   padding-left: 5vw;
@@ -86,5 +89,6 @@
     grid-row-end: 4;
     height: 25vh;
     width: 100%;
+    border-top: 1px solid black;
   }
 }

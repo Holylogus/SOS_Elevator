@@ -1,11 +1,12 @@
 import { useEffect, useRef } from "react";
 import "../styles/ServiceCard.css"
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useLocation } from "react-router-dom";
 
 export default function ServiceCard({ src, title, text, alt, route }) {
     const CardRef = useRef(null);
 
-    const navigate = useNavigate();  
+    const navigate = useNavigate(); 
+    const location = useLocation(); 
 
     useEffect(()=>{
         const observer = new IntersectionObserver(
@@ -29,9 +30,28 @@ export default function ServiceCard({ src, title, text, alt, route }) {
             }
         }
     },[])
+
+    useEffect(() => {
+      if (location.hash) {
+          const element = document.getElementById(location.hash.substring(1));
+          if (element) {
+              element.scrollIntoView({ behavior: "smooth" });
+          }
+      }
+  }, [location]);
+  
     return (
     <div className="customCard" ref={CardRef} onClick={()=>{
-      navigate(route)
+      const [path, hash] = route.split("#");
+      navigate(path); // Navigál az alap útvonalra
+      if (hash) {
+          setTimeout(() => {
+              const element = document.getElementById(hash);
+              if (element) {
+                  element.scrollIntoView({ behavior: "smooth" }); // Görget az elemre
+              }
+          }, 100); // Rövid késleltetés a React frissítés miatt
+      }
     }}>
       <div className="cardHeader">
         <img src={src} alt={alt} />
@@ -39,5 +59,6 @@ export default function ServiceCard({ src, title, text, alt, route }) {
         <p>{text}</p>
       </div>
     </div>
+    
   );
 }

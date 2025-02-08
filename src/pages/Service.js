@@ -186,55 +186,53 @@ export default function Service() {
         </section>
         <section id="tanacsadas">
           <img src={tanacsadas} alt="tanacsadas" />
-          <div className="tanacsadas">
-            <h4 className="title">
-              Szaktanácsadás - Szakértői útmutatás a hatékony működésért
-            </h4>
-            <p className="content">
-              A liftek és mozgólépcsők működésének optimalizálása sokszor
-              összetett kihívást jelent. Az <strong>SOS Elevator Kft. </strong>
-              szaktanácsadási szolgáltatásai segítenek Önnek megérteni és
-              megoldani a rendszerei működésével kapcsolatos problémákat,
-              valamint megalapozott döntéseket hozni. Tapasztalt szakembereink
-              egyedi igényekre szabott megoldásokkal támogatják Önt, hogy
-              rendszerei mindig a legjobb teljesítményt nyújtsák.
-            </p>
-            <h5 className="Why">
-              Miért érdemes szaktanácsadási szolgáltatásainkat választani?
-            </h5>
-            <ul>
-              <li>
-                <strong>Egyedi megoldások: </strong>Minden tanácsadásunk a
-                konkrét igények és kihívások figyelembevételével készül, hogy
-                valódi hozzáadott értéket nyújtsunk.
-              </li>
-              <li>
-                <strong>Megbízható szakértelem: </strong>Csapatunk hosszú évek
-                tapasztalatával rendelkezik a liftek és mozgólépcsők
-                karbantartása, modernizációja és szervizelése terén.
-              </li>
-              <li>
-                <strong>Költséghatékony megoldások: </strong>A hatékony
-                tanácsadás segít megelőzni a váratlan hibákat és optimalizálja a
-                működtetési költségeket.
-              </li>
-              <li>
-                <strong>Jövőbiztos rendszerek: </strong>Segítünk megtervezni
-                azokat a lépéseket, amelyek biztosítják, hogy rendszerei a
-                legújabb technológiai elvárásoknak is megfeleljenek.
-              </li>
-            </ul>
-            <h5>Hogyan működik?</h5>
-            <p>
-              Az <strong>SOS Elevator Kft.</strong> szaktanácsadási
-              szolgáltatása az Ön igényeire szabott. Legyen szó
-              rendszerdiagnosztikáról, modernizációs lehetőségek felméréséről
-              vagy költségoptimalizálásról, szakértőink részletes elemzésekkel
-              és javaslatokkal állnak rendelkezésére. Fektessen a hosszú távú
-              biztonságba és hatékonyságba! Forduljon hozzánk, és használja ki a
-              szakértői tanácsadás minden előnyét.
-            </p>
-          </div>
+          <h4 className="title">
+            Szaktanácsadás - Szakértői útmutatás a hatékony működésért
+          </h4>
+          <p className="content">
+            A liftek és mozgólépcsők működésének optimalizálása sokszor
+            összetett kihívást jelent. Az <strong>SOS Elevator Kft. </strong>
+            szaktanácsadási szolgáltatásai segítenek Önnek megérteni és
+            megoldani a rendszerei működésével kapcsolatos problémákat, valamint
+            megalapozott döntéseket hozni. Tapasztalt szakembereink egyedi
+            igényekre szabott megoldásokkal támogatják Önt, hogy rendszerei
+            mindig a legjobb teljesítményt nyújtsák.
+          </p>
+          <h5 className="Why">
+            Miért érdemes szaktanácsadási szolgáltatásainkat választani?
+          </h5>
+          <ul>
+            <li>
+              <strong>Egyedi megoldások: </strong>Minden tanácsadásunk a konkrét
+              igények és kihívások figyelembevételével készül, hogy valódi
+              hozzáadott értéket nyújtsunk.
+            </li>
+            <li>
+              <strong>Megbízható szakértelem: </strong>Csapatunk hosszú évek
+              tapasztalatával rendelkezik a liftek és mozgólépcsők
+              karbantartása, modernizációja és szervizelése terén.
+            </li>
+            <li>
+              <strong>Költséghatékony megoldások: </strong>A hatékony tanácsadás
+              segít megelőzni a váratlan hibákat és optimalizálja a működtetési
+              költségeket.
+            </li>
+            <li>
+              <strong>Jövőbiztos rendszerek: </strong>Segítünk megtervezni
+              azokat a lépéseket, amelyek biztosítják, hogy rendszerei a
+              legújabb technológiai elvárásoknak is megfeleljenek.
+            </li>
+          </ul>
+          <h5 className="How">Hogyan működik?</h5>
+          <p className="HowContent">
+            Az <strong>SOS Elevator Kft.</strong> szaktanácsadási szolgáltatása
+            az Ön igényeire szabott. Legyen szó rendszerdiagnosztikáról,
+            modernizációs lehetőségek felméréséről vagy költségoptimalizálásról,
+            szakértőink részletes elemzésekkel és javaslatokkal állnak
+            rendelkezésére. Fektessen a hosszú távú biztonságba és
+            hatékonyságba! Forduljon hozzánk, és használja ki a szakértői
+            tanácsadás minden előnyét.
+          </p>
         </section>
       </div>
     </div>

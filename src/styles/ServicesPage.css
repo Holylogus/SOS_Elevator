@@ -111,30 +111,49 @@
     padding-left: 1rem;
 }
 #ServicePage #tanacsadas {
-  display: flex;
-  flex-direction: row;
-  padding-top: 5vh;
-  padding-bottom: 2vh;
-  padding-left: 3vw;
-  padding-right: 3vw;
+  display: grid;
+  grid-template-columns: auto, auto;
+  grid-template-rows: repeat(8,auto);
   background-color: #67809f;
   color: white;
   text-shadow: 4px 4px 10px rgba(0, 0, 0, 1);
   border: 1px solid black;
 }
-#ServicePage #tanacsadas .tanacsadas {
-  padding-left: 2vw;
-}
 #ServicePage #tanacsadas img {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 8;
   height: 55vh;
+  margin-left: 1rem;
+  margin-right: 1rem;
   border: 1px solid black;
   border-radius: 5px;
   margin-top: 7vh;
 }
 #ServicePage #tanacsadas h4 {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
   padding-bottom: 2vh;
+  padding-top: 1rem;
   padding-left: 1.5vw;
   text-decoration: underline;
+}
+#ServicePage #tanacsadas .content{
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+#ServicePage #tanacsadas .How{
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+#ServicePage #tanacsadas .HowContent{
+  grid-column-start: 2;
+  grid-column-end: 3;
 }
 #ServicePage #tanacsadas p {
   text-align: justify;
@@ -187,7 +206,7 @@
   padding-right: 2vw;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 575px) {
   #ServicePage #karbantartas {
     flex-direction: column-reverse;
     align-items: center;
@@ -235,7 +254,6 @@
   #ServicePage #karbantartas p {
     font-size: small;
   }
-
   #ServicePage #karbantartas h5 {
     font-size: medium;
     padding-left: 2vw;
@@ -279,6 +297,8 @@
   #ServicePage #szerviz h4 {
     padding: 0;
     text-align: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
     margin-top: -10rem;
     margin-bottom: 7rem;
     color: #ffd700;
@@ -291,6 +311,7 @@
     padding-left: 1rem;
     padding-right: 1rem;
     font-size: smaller;
+    padding-top: 1rem;
   }
   #ServicePage #szerviz h5 {
     font-size: medium;
@@ -298,7 +319,7 @@
   }
   #ServicePage #szerviz ul {
     font-size: smaller;
-    padding-left: 1rem;
+    margin-left: 1rem;
   }
 
   #ServicePage #modernizacio {
@@ -366,17 +387,22 @@
     grid-column-end: 3;
   }
 
-  #ServicePage #tanacsadas {
-    flex-direction: column;
-    padding: 0;
-    margin: 0;
-  }
+  
   #ServicePage #tanacsadas img {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
     height: 20rem;
+    width: 100%;
     margin: 0;
+    padding: 0;
   }
   #ServicePage #tanacsadas h4 {
-    padding: 0;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
     text-align: center;
     margin-top: -12rem;
     margin-bottom: 8.3rem;
@@ -384,6 +410,31 @@
     font-size: x-large;
     text-shadow: 4px 4px 10px rgba(0, 0, 0, 1);
     -webkit-text-stroke: 1px rgba(0, 0, 0, 0.4);
+  }
+  #ServicePage #tanacsadas .content{
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    padding-top: 0.5rem;
+  }
+  #ServicePage #tanacsadas .Why{
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+  #ServicePage #tanacsadas .How{
+    grid-row-start: 5;
+    grid-row-end: 6;
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+  #ServicePage #tanacsadas .HowContent{
+    grid-row-start: 6;
+    grid-row-end: 7;
+    grid-column-start: 1;
+    grid-column-end: 3;
   }
   #ServicePage #tanacsadas h5 {
     font-size: medium;
@@ -396,9 +447,265 @@
   }
   #ServicePage #tanacsadas ul {
     font-size: smaller;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    margin-left: 1rem;
   }
 }
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 576px) and (max-width: 767px){
+  #ServicePage #karbantartas {
+    flex-direction: column-reverse;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+  }
+  #ServicePage #karbantartas img {
+    height: 18rem;
+    width: 100%;
+    margin: 0;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+  #ServicePage #karbantartas h4 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    padding-bottom: 2vh;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    margin-bottom: 4rem;
+    margin-top: -10rem;
+    text-decoration: underline;
+    text-align: center;
+    color: #ffd700;
+    font-size: x-large;
+    text-shadow: 4px 4px 10px rgba(0, 0, 0, 1);
+    -webkit-text-stroke: 1px rgba(0, 0, 0, 0.4);
+  }
+  #ServicePage #karbantartas .content {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+  }
+  #ServicePage #karbantartas .Why {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 4;
+    grid-row-end: 5;
+  }
+  #ServicePage #karbantartas p {
+    font-size: small;
+  }
+  #ServicePage #karbantartas h5 {
+    font-size: medium;
+    padding-left: 2vw;
+  }
+  #ServicePage #karbantartas ul {
+    font-size: smaller;
+    grid-row-start: 5;
+    grid-row-end: 6;
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+  #ServicePage #karbantartas .How {
+    grid-row-start: 6;
+    grid-row-end: 7;
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+  #ServicePage #karbantartas ol {
+    font-size: smaller;
+    grid-row-start: 7;
+    grid-row-end: 8;
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+  #ServicePage #karbantartas .ending {
+    grid-row-start: 8;
+    grid-row-end: 9;
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+
+  #ServicePage #szerviz {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+  }
+  #ServicePage #szerviz img {
+    height: 20rem;
+  }
+  #ServicePage #szerviz h4 {
+    padding: 0;
+    text-align: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-top: -10rem;
+    margin-bottom: 7.5rem;
+    color: #ffd700;
+    font-size: x-large;
+    text-shadow: 4px 4px 10px rgba(0, 0, 0, 1);
+    -webkit-text-stroke: 1px rgba(0, 0, 0, 0.4);
+  }
+  #ServicePage #szerviz p {
+    text-align: justify;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    font-size: smaller;
+    padding-top: 1rem;
+  }
+  #ServicePage #szerviz h5 {
+    font-size: medium;
+    padding-left: 1rem;
+  }
+  #ServicePage #szerviz ul {
+    font-size: smaller;
+    margin-left: 1rem;
+  }
+
+  #ServicePage #modernizacio {
+    padding: 0;
+  }
+  #ServicePage #modernizacio img {
+    height: 20rem;
+    width: 100%;
+    margin: 0;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+  #ServicePage #modernizacio h4 {
+    padding: 0;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    text-align: center;
+    margin-top: -13rem;
+    margin-bottom: 7.6rem;
+    color: #ffd700;
+    font-size: x-large;
+    text-shadow: 4px 4px 10px rgba(0, 0, 0, 1);
+    -webkit-text-stroke: 1px rgba(0, 0, 0, 0.4);
+  }
+  #ServicePage #modernizacio .content{
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+  #ServicePage #modernizacio .Why{
+    grid-row-start: 4;
+    grid-row-end: 5;
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+  #ServicePage #modernizacio .ending1{
+    grid-row-start: 8;
+    grid-row-end: 9;
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+  #ServicePage #modernizacio .ending2{
+    grid-row-start: 9;
+    grid-row-end: 10;
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+  #ServicePage #modernizacio h5 {
+    font-size: medium;
+    padding-left: 2vw;
+  }
+  #ServicePage #modernizacio p {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    font-size: smaller;
+  }
+  #ServicePage #modernizacio ul {
+    font-size: smaller;
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+
+  
+  #ServicePage #tanacsadas img {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    height: 25rem;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  #ServicePage #tanacsadas h4 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    text-align: center;
+    margin-top: -12rem;
+    margin-bottom: 8.3rem;
+    color: #ffd700;
+    font-size: x-large;
+    text-shadow: 4px 4px 10px rgba(0, 0, 0, 1);
+    -webkit-text-stroke: 1px rgba(0, 0, 0, 0.4);
+  }
+  #ServicePage #tanacsadas .content{
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    padding-top: 0.5rem;
+  }
+  #ServicePage #tanacsadas .Why{
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+  #ServicePage #tanacsadas .How{
+    grid-row-start: 5;
+    grid-row-end: 6;
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+  #ServicePage #tanacsadas .HowContent{
+    grid-row-start: 6;
+    grid-row-end: 7;
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+  #ServicePage #tanacsadas h5 {
+    font-size: medium;
+    padding-left: 2vw;
+  }
+  #ServicePage #tanacsadas p {
+    padding-left: 2vw;
+    padding-right: 2vw;
+    font-size: smaller;
+  }
+  #ServicePage #tanacsadas ul {
+    font-size: smaller;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    margin-left: 1rem;
+  }
+
+}
+
+
+@media (min-width: 767px) and (max-width: 1024px) {
   #ServicePage #karbantartas {
     padding: 0;
     grid-template-columns: 4fr 1fr;
@@ -535,5 +842,69 @@
   #ServicePage #modernizacio .ending2{
     grid-column-start: 1;
     grid-column-end: 3;
+  }
+
+  #ServicePage #tanacsadas img {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    height: 15rem;
+    width: 18rem;
+    margin-bottom: 1rem;
+  }
+  #ServicePage #tanacsadas h4 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    margin-top: 1rem;
+    
+  }
+  #ServicePage #tanacsadas .content{
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    padding-top: 0.5rem;
+  }
+  #ServicePage #tanacsadas .Why{
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    padding-bottom: 0.5rem;
+  }
+  #ServicePage #tanacsadas .How{
+    grid-row-start: 5;
+    grid-row-end: 6;
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+  #ServicePage #tanacsadas .HowContent{
+    grid-row-start: 6;
+    grid-row-end: 7;
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+  #ServicePage #tanacsadas h5 {
+    font-size: medium;
+    padding-left: 2vw;
+  }
+  #ServicePage #tanacsadas p {
+    padding-left: 2vw;
+    padding-right: 2vw;
+    font-size: smaller;
+  }
+  #ServicePage #tanacsadas ul {
+    font-size: smaller;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    margin-left: 1rem;
+  }
+  #ServicePage #tanacsadas li{
+    padding-bottom: 0.5rem;
   }
 }

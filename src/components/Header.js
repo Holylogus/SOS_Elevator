@@ -1,7 +1,6 @@
 import React from "react";
-import { Image, Button, Dropdown, DropdownToggle, Container, Navbar, Offcanvas, Nav, NavDropdown } from "react-bootstrap";
+import { Image, Container, Navbar, Offcanvas, Nav, NavDropdown } from "react-bootstrap";
 import logo from "../images/logo.PNG";
-import menuIcon from "../icons/menuIcon.png"
 import { HashLink } from "react-router-hash-link";
 import "../styles/Header.css";
 import { Link } from "react-router-dom";
@@ -28,8 +27,6 @@ function Header({ className }) {
               </Offcanvas.Header>
               <Offcanvas.Body>
                 <Nav >
-                  <Nav.Link><Link to="/About">Rólunk</Link></Nav.Link>
-                  <Nav.Link><Link to="/Contact">Kapcsolat</Link></Nav.Link>
                   <NavDropdown
                     title="Szolgáltatások"
                     id="dropdown"
@@ -45,7 +42,8 @@ function Header({ className }) {
                     Tanácsadás
                     </NavDropdown.Item>
                   </NavDropdown>
-                  <button>Ajánlatkérés</button>
+                  <Nav.Link><Link to="/About">Rólunk</Link></Nav.Link>
+                  <Nav.Link as={HashLink}><Link to="/#Contact">Kapcsolat</Link></Nav.Link>
                 </Nav>
               </Offcanvas.Body>
             </Navbar.Offcanvas>

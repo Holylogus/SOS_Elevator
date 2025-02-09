@@ -16,10 +16,9 @@ export default function Contact() {
   };
 
   return (
-    <div id="Contact">
+    <section id="Contact">
       <div className="brand">
         <img src={logo} alt="logo"/>
-        <button>Ajánlatkérés</button>
       </div>
       <div className="contact">
         <h3>Kapcsolat</h3>
@@ -44,6 +43,6 @@ export default function Contact() {
           </GoogleMap>
         </LoadScript>
       </div>
-    </div>
+    </section>
   );
 }

@@ -1,7 +1,7 @@
 {
   "name": "soselevator",
   "version": "0.1.0",
-  "homepage": "sos-elevator.com",
+  "homepage": "/",
   "private": true,
   "dependencies": {
     "@react-google-maps/api": "^2.20.3",

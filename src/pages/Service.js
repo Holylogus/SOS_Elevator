@@ -135,7 +135,7 @@ export default function Service() {
             funkciókat integrálunk az Ön meglévő rendszereibe.
           </p>
           <h5 className="Why">Miért válassza a modernizációt?</h5>
-          <ul>
+          <ul className="WhyUl">
             <li>
               <strong>Költséghatékonyság: </strong>Csökkentse üzemeltetési
               költségeit energiahatékony komponensekkel.
@@ -154,7 +154,7 @@ export default function Service() {
               működést a régi rendszerek energiahatékonyságának növelésével.
             </li>
           </ul>
-          <h5>Mit kínálunk?</h5>
+          <h5 className="What">Mit kínálunk?</h5>
           <ul>
             <li>
               Komplett rendszercserét vagy részleges modernizációt az Ön igényei

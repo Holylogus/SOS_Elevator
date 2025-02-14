@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "SOS Elevator",
+  "name": "SOS Elevator - Lift Szerelés és Karbantartás",
   "icons": [
     {
       "src": "logo.png",
